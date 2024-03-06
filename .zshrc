@@ -1,4 +1,4 @@
-source ~/.secrets
+source ~/.shvars
 
 # PATH additions
 export NVM_DIR="$HOME/.nvm"
@@ -21,7 +21,8 @@ function git_branch_name()
 COLOR_DEF=$'%f'
 COLOR_USR=$'%F{243}'
 COLOR_DIR=$'%F{254}'
-COLOR_GIT=$'%F{216}'
+#COLOR_GIT=$'%F{63}'
+COLOR_GIT=$'%F{255}'
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_DIR}%~ ${COLOR_GIT}$(git_branch_name)${COLOR_DEF}$ '
 

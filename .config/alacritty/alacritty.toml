@@ -1,3 +1,7 @@
 [font]
-normal = { family = "Ubuntu Mono", style = "Regular" }
-size = 16
+#normal = { family = "Ubuntu Mono", style = "Regular" }
+size = 14
+
+[colors.primary]
+#background = '#2d2d2e'
+background = '#000000'
