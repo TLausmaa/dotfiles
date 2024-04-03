@@ -31,3 +31,4 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # Aliases
 alias v="nvim"
+alias rr="rg"
