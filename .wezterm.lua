@@ -13,11 +13,8 @@ config.window_padding = {
     bottom = 0,
 }
 
-config.colors = {
-    foreground = 'white'
-}
 
--- config.font = wezterm.font 'Fira Code'
+config.font = wezterm.font 'JetBrains Mono'
 
 --[[
 config.colors = {
@@ -40,6 +37,20 @@ config.colors = {
   scrollbar_thumb = '#222222',
 }
 --]]
+
+config.colors = {
+   foreground = 'white',
+   cursor_bg = '#3fec9d',
+}
+
+config.color_schemes = {
+    ['Daylight'] = {
+        background = '#b3b3b3',
+        foreground = '#000000',
+    }
+}
+
+-- config.color_scheme = 'Daylight'
 
 -- This is where you actually apply your config choices
 config.keys = {
@@ -67,6 +78,16 @@ config.keys = {
         key = '7',
         mods = 'OPT',
         action = wezterm.action.SendString '|'
+    },
+    {
+        key = '/',
+        mods = 'OPT|SHIFT',
+        action = wezterm.action.SendString '\\'
+    },
+    {
+        key = '4',
+        mods = 'OPT',
+        action = wezterm.action.SendString '$'
     },
 }
 
