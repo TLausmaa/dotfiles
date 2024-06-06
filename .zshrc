@@ -19,10 +19,12 @@ function git_branch_name()
   fi
 }
 COLOR_DEF=$'%f'
-COLOR_USR=$'%F{243}'
+# Dark theme
 COLOR_DIR=$'%F{254}'
-#COLOR_GIT=$'%F{63}'
 COLOR_GIT=$'%F{255}'
+# Light theme
+# COLOR_DIR=$'%F{0}'
+# COLOR_GIT=$'%F{0}'
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_DIR}%~ ${COLOR_GIT}$(git_branch_name)${COLOR_DEF}$ '
 
