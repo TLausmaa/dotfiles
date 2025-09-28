@@ -1,0 +1,184 @@
+/* --- Global Styles --- */
+* {
+  font-family: 'JetBrains Mono';
+  font-size: 14px;
+  min-height: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+/* --- Waybar Container --- */
+#waybar {
+  background: #121212;
+  color: #c6d0f5; /* doesn't do anything */
+  color: gainsboro;
+  margin: 0px;
+  font-weight: 500;
+}
+
+#workspaces,
+#custom-uptime,
+#cpu {
+  background-color: black;
+  color: gainsboro;
+  padding: 0;
+  margin: 0px 0px;
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#workspaces {
+  padding: 0px;
+  margin-left: 0px; /* Margin from the far left edge */
+  margin-right: 16px; /* Spacing after the workspaces module */
+}
+
+#custom-uptime, #cpu {
+    background: #00AAA9;
+    background: #121212;
+    color: #242424;
+    color: #d4a900;
+    color: gray;
+    padding: 0rem 0.7rem;
+}
+
+/* Simple Hover effects for individual left modules - BRIGHTER COLOR */
+#custom-uptime:hover,
+#cpu:hover {
+  background-color: rgb(41, 42, 53); /* Brighter highlight */
+}
+
+#workspaces button {
+  background: transparent;
+  color: gainsboro;
+  border-radius: 0;
+  padding: 0rem 0.4rem 0rem 0.4rem;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+#workspaces button.active {
+  background-color: #00AAA9;
+  background-color: #d4a900;
+  background-color: #9c9c9c;
+  color: black;
+}
+
+#workspaces button:hover {
+  background: springgreen;
+  color: black;
+}
+
+#clock {
+  background-color: #121212;
+  padding: 0px 8px;
+  margin: 0px 0px;
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Simple Hover effect for clock module - BRIGHTER COLOR */
+#clock:hover {
+  background-color: springgreen;
+  color: black;
+}
+
+/* --- Right Modules (Single, Seamless Bar ) --- */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  background: #00AA00;
+  background: #121212;
+  padding: 0rem 0.7rem;
+  margin: 0px 0px; 
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#network:hover,
+#custom-lock:hover,
+#battery:hover {
+  background-color: rgb(41, 42, 53);
+}
+
+#bluetooth {
+  margin-left: 0px; 
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#battery {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 0px;
+}
+
+#clock {
+  color: gainsboro;
+  color: #d4a900;
+  font-weight: 500;
+}
+
+#pulseaudio, #backlight, #network, #custom-lock, #battery, #bluetooth {
+  color: gainsboro;
+  color: #242424;
+  color: gainsboro;
+}
+#bluetooth {
+   padding-left: 0.9rem; 
+}
+#battery.charging {
+}
+#battery.warning:not(.charging) {
+  color: #e78284;
+}
+
+#network.disconnected {
+  color: gainsboro;
+}
+#bluetooth.on {
+  color: cyan;
+  color: #242424;
+  color: gainsboro;
+}
+#bluetooth.connected {
+  color: cyan;
+  color: #242424;
+  color: gainsboro;
+}
+
+#network {
+  margin-right: 0px;
+  padding-right: 15px;
+}
+
+#bluetooth {
+  font-size: 16px;
+}
+
+/* --- Tooltip Styles --- */
+tooltip {
+  background-color: #1a1b26;
+  color: #dddddd;
+  padding: 5px 12px;
+  margin: 5px 0px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+
