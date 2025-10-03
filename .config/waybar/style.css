@@ -1,7 +1,7 @@
 /* --- Global Styles --- */
 * {
   font-family: 'JetBrains Mono';
-  font-size: 14px;
+  font-size: 11px;
   min-height: 0;
   padding-right: 0px;
   padding-left: 0px;
@@ -11,6 +11,7 @@
 /* --- Waybar Container --- */
 #waybar {
   background: #121212;
+  background: #171717;
   color: #c6d0f5; /* doesn't do anything */
   color: gainsboro;
   margin: 0px;
@@ -37,7 +38,7 @@
 
 #custom-uptime, #cpu {
     background: #00AAA9;
-    background: #121212;
+    background: #171717;
     color: #242424;
     color: #d4a900;
     color: gray;
@@ -54,7 +55,7 @@
   background: transparent;
   color: gainsboro;
   border-radius: 0;
-  padding: 0rem 0.4rem 0rem 0.4rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
   transition: all 0.2s ease-in-out;
   border: none;
   outline: none;
@@ -73,7 +74,7 @@
 }
 
 #clock {
-  background-color: #121212;
+  background-color: #171717;
   padding: 0px 8px;
   margin: 0px 0px;
   min-width: 0;
@@ -95,7 +96,7 @@
 #custom-lock,
 #battery {
   background: #00AA00;
-  background: #121212;
+  background: #171717;
   padding: 0rem 0.7rem;
   margin: 0px 0px; 
   border-radius: 0;
